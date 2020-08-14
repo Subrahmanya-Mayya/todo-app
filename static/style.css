@@ -1,0 +1,236 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Mono', sans-serif;
+  /*font-family: 'Roboto Mono', monospace;*/
+  color:#fff;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 70%;
+  border-radius: 15px;
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.1), 0 6px 30px 5px rgba(0, 0, 0, 0.11), 0 8px 10px -7px rgba(0, 0, 0, 0.1);
+  overflow: scroll;
+}
+.title {
+  background: #45b5c6;
+  margin-top:50px;
+  width: 100%;
+  padding:10px 0;
+}
+.title h1{
+  font-weight: 600;
+  font-size: 4em;
+}
+.form{
+  width:100%;
+  margin:30px 0px;
+  padding:20px 30px;
+  color:#fff;
+  height: auto;
+}
+.form .inptodo{
+  border: 0;
+  background: transparent;
+  outline: none;
+  border-bottom: 1px solid #fff;
+  width: 60%;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  transition: 0.8s ease-in-out;
+}
+.form .inptodo:hover{
+  border-bottom: 1px solid #45b5c6;
+}
+.form .submit{
+  display: inline-block;
+  border-radius:8px;
+  border: none;
+  outline: none;
+  background: #45b5c6;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.11), 0 1px 10px 0 rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+ margin:0 30px;
+ width :100px;
+  transition: 0.2s;
+}
+.form .submit:hover{
+  background: #17a2b8;
+  transform: scale(0.95);
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.11), 0 1px 10px 0 rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+}
+.form .submit .submit-text{
+  font-size: 30px;
+  margin: 20px;
+  color:#fff;
+}
+
+.todos{
+  margin:10px 0;
+  padding:20px 30px;
+}
+.todos .todo {
+  margin-bottom: 30px;
+}
+.todos .todo h3{
+  font-size: 30px;
+  background: #45b5c6;
+}
+.todos .todo h3 .cancel{
+  border: none;
+  outline: none;
+  padding: 0 15px;
+  border-radius:3px;
+  transition: 0.3s;
+}
+.todos .todo h3 .cancel:hover{
+  transform: scale(0.95);
+}
+
+
+@media screen and (max-width: 500px) {
+  .box{
+    border-radius: 10px;
+  }
+  .title{
+    margin-top: 20px;
+    padding :1px 0;
+  }
+  .title h1{
+    font-size: 2.5em;
+  }
+  .form{
+    margin:20px 0px;
+    padding:10px 20px;
+  }
+  .form .inptodo{
+    width: 57%;
+  }
+  .form .submit{
+    margin:0 20px;
+    width:50px ;
+  }
+  .form .submit .submit-text{
+    font-size: 25px;
+    margin: 0 10px;
+  }
+  .todos{
+    margin:10px 0;
+    padding:10px 20px;
+  }
+  .todos .todo{
+    margin-bottom: 20px;
+  }
+  .todos .todo h3{
+    font-size: 18px;
+  }
+  .todos .todo h3 .cancel{
+    padding: 0 5px;
+  }
+}
+
+
+
+
+/*
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  color:#fff;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  height: 80%;
+  border-radius: 8px;
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.1), 0 6px 30px 5px rgba(0, 0, 0, 0.11), 0 8px 10px -7px rgba(0, 0, 0, 0.1);
+  overflow: scroll;
+}
+.title {
+  background: #45b5c6;
+  margin-top:30px;
+  width: 100%;
+  padding:3px 0;
+}
+.title h1{
+  font-weight: 600;
+}
+.form{
+  width:100%;
+  margin:20px 0px;
+  padding:10px 20px;
+  color:#fff;
+  height: auto;
+}
+.form .todo{
+  border: 0;
+  background: transparent;
+  outline: none;
+  border-bottom: 1px solid #fff;
+  width: 60%;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  transition: 0.8s ease-in-out;
+}
+.form .todo:hover{
+  border-bottom: 1px solid #45b5c6;
+}
+.form .submit{
+  display: inline-block;
+  border-radius:8px;
+  border: none;
+  outline: none;
+  background: #45b5c6;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.11), 0 1px 10px 0 rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+ margin:0 20px;
+  transition: 0.2s;
+}
+.form .submit:hover{
+  background: #17a2b8;
+  transform: scale(0.95);
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.11), 0 1px 10px 0 rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+}
+.form .submit .submit-text{
+  font-size: 25px;
+  margin: 15px;
+  color:#fff;
+}
+
+.todos{
+  margin:10px 0;
+  padding:10px 20px;
+}
+.todos .todo h3{
+  font-size: 18px;
+  background: #45b5c6;
+}
+.todos .todo h3 .cancel{
+  border: none;
+  outline: none;
+  padding: 0 5px;
+  border-radius:3px;
+  transition: 0.3s;
+}
+.todos .todo h3 .cancel:hover{
+  transform: scale(0.95);
+}
+*/
