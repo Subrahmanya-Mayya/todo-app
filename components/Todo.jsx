@@ -9,7 +9,7 @@ function Form(){
       setTodo(JSON.parse(todos));
     },[])
     
-Subrahmanya Mayya
+    useEffect(()=>{
       localStorage.setItem('todos',JSON.stringify(todo));
     }, [todo])
     
